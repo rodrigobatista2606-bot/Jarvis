@@ -1,0 +1,11 @@
+# Jarvis auf einem eigenen Server (ohne Home Assistant).
+# Einstellungen: data/options.json (Vorlage: options.example.json)
+services:
+  jarvis:
+    build: ./jarvis
+    container_name: jarvis
+    restart: unless-stopped
+    volumes:
+      - ./data:/data
+    environment:
+      - TZ=Europe/Berlin
