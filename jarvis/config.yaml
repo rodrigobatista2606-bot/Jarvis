@@ -2,7 +2,7 @@ name: Jarvis
 version: "0.1.0"
 slug: jarvis
 description: Persönlicher Assistent – sortiert Mails, meldet Wichtiges per WhatsApp und ruft bei Dringendem an.
-url: https://github.com/OWNER/jarvis
+url: https://github.com/rodrigobatista2606-bot/Jarvis
 arch:
   - aarch64
   - amd64
