@@ -30,12 +30,37 @@ Der Sortierer läuft kostenlos in deinem Google-Konto. Du brauchst dafür keinen
    2. Es erscheint „Google hat diese App nicht überprüft“. Das ist normal, weil es dein eigenes Skript ist. Klicke auf **Erweitert → Zu Jarvis wechseln (unsicher)** und dann auf **Zulassen**.
 4. Unten im Protokoll steht dann für jede Mail eine Zeile und am Ende **„Fertig!“**.
 
-## Schritt 5: Ein paar Tage beobachten
-- In Gmail siehst du links die neuen Labels unter **Jarvis**: Dringend, Wichtig, Marken und Würde löschen.
-- **Marken:** Hier landen Newsletter und Werbung bekannter Marken wie Rituals. Die kannst du selbst durchsehen und abbestellen. Alle anderen Newsletter, Werbung und Spam löscht Jarvis.
-- Jeden Abend um 19 Uhr kommt der **Jarvis Tagesbericht**.
-- **Testmodus:** Am Anfang löscht Jarvis nichts. Er setzt nur das Label „Würde löschen“.
-- Wenn alles passt, öffne das Skript und ändere oben `TESTMODUS: true` in `TESTMODUS: false`. Danach speichern.
+## Schritt 5: Übersichtsseite einrichten
+1. Klicke im Skript oben rechts auf **Bereitstellen → Neue Bereitstellung**.
+2. Klicke beim Zahnrad neben „Typ auswählen“ auf **Web-App**.
+3. Stell die Felder so ein:
+   - Beschreibung: `Jarvis`
+   - **Ausführen als: Ich**
+   - **Zugriff: Nur ich**
+4. Klicke auf **Bereitstellen** und kopiere die **Web-App-URL**.
+5. Öffne die URL am Handy und speichere sie als Lesezeichen oder auf dem Startbildschirm. Das ist deine **Jarvis Übersicht**.
+
+In der Übersicht siehst du alle Mails nach Gruppen sortiert: Dringend, Wichtig, Marken, Normal und Löschvorschläge. Zu jeder Mail gibt es eine kurze Zusammenfassung und diese Knöpfe:
+- **Löschen**
+- **Erledigt** (archivieren)
+- **Abbestellen**
+- **Öffnen**
+
+Für eine ganze Gruppe gibt es außerdem **„Alle löschen“**.
+
+Jarvis prüft **alle** Mails im Posteingang. Ältere Mails arbeitet er nach und nach im Hintergrund ab, etwa 100–300 pro 10 Minuten. Bis dahin zeigt die Übersicht oben, wie viele noch warten.
+
+Jeden Abend um 19 Uhr kommt der **Jarvis Tagesbericht** mit einem Link zur Übersicht.
+
+## Schritt 6: Testmodus ausschalten (wenn alles passt)
+- **Im Testmodus** löscht Jarvis nichts von selbst. Du löschst per Knopf in der Übersicht.
+- **Mit `TESTMODUS: false`** landen Spam, Werbung und Newsletter automatisch im Papierkorb. Für 7 Tage kannst du sie in der Übersicht unter „Von Jarvis gelöscht“ wiederherstellen.
+
+## Code aktualisieren
+Wenn es eine neue Version gibt:
+1. Kopiere den neuen Code aus `Code.gs`, ersetze damit den alten Code im Editor und speichere.
+2. Führe **installieren** einmal aus.
+3. Hast du die Web-App schon eingerichtet, wähle **Bereitstellen → Bereitstellungen verwalten**, klicke auf den **Stift**, stell die **Version** auf **„Neue Version“** und klicke auf **Bereitstellen**. Die URL bleibt dabei gleich.
 
 ## Anpassen
 Oben im Skript unter `EINSTELLUNGEN` kannst du Folgendes ändern:
