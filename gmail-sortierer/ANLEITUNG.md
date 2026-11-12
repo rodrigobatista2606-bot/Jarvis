@@ -31,13 +31,15 @@ Der Sortierer läuft kostenlos in deinem Google-Konto. Du brauchst dafür keinen
 4. Unten im Protokoll steht dann für jede Mail eine Zeile und am Ende **„Fertig!“**.
 
 ## Schritt 5: Ein paar Tage beobachten
-- In Gmail siehst du links die neuen Labels unter **Jarvis**: Dringend, Wichtig, Newsletter und Würde löschen.
+- In Gmail siehst du links die neuen Labels unter **Jarvis**: Dringend, Wichtig, Marken und Würde löschen.
+- **Marken:** Hier landen Newsletter und Werbung bekannter Marken wie Rituals. Die kannst du selbst durchsehen und abbestellen. Alle anderen Newsletter, Werbung und Spam löscht Jarvis.
 - Jeden Abend um 19 Uhr kommt der **Jarvis Tagesbericht**.
 - **Testmodus:** Am Anfang löscht Jarvis nichts. Er setzt nur das Label „Würde löschen“.
 - Wenn alles passt, öffne das Skript und ändere oben `TESTMODUS: true` in `TESTMODUS: false`. Danach speichern.
 
 ## Anpassen
 Oben im Skript unter `EINSTELLUNGEN` kannst du Folgendes ändern:
+- `MARKEN`: Marken, die immer im Label „Marken“ landen statt im Papierkorb, z. B. `'rituals.com'`.
 - `NIE_LOESCHEN`: Absender oder Domains, die nie aussortiert werden, z. B. `'mama@gmail.com'`.
 - `IMMER_DRINGEND`: Absender, die immer als dringend markiert werden.
 - `EIGENE_REGELN`: Regeln in Alltagssprache.
