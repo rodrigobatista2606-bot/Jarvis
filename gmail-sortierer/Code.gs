@@ -27,7 +27,7 @@ const EINSTELLUNGEN = {
 
   // KI-Modell. 'claude-opus-5-5' = am klügsten (ca. 1 Cent pro Mail).
   // 'claude-haiku-5-5' = viel günstiger (ca. 0,05 Cent pro Mail), etwas weniger treffsicher.
-  MODELL: 'claude-opus-5-5',
+  MODELL: 'claude-haiku-5-5',
 
   // Absender oder Domains, die NIE gelöscht werden.
   NIE_LOESCHEN: [
