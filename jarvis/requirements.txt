@@ -1,0 +1,5 @@
+anthropic==2.8.0
+twilio==9.13.0
+msal==1.39.0
+requests==2.34.2
+tzdata

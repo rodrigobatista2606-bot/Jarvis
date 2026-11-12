@@ -1,0 +1,61 @@
+configuration:
+  anthropic_api_key:
+    name: Claude-API-Schlüssel
+    description: Von console.anthropic.com (beginnt mit sk-ant-).
+  model:
+    name: KI-Modell
+    description: Standard claude-opus-5-5. Deutlich günstiger, etwas weniger klug - claude-haiku-5-5.
+  gmail_address:
+    name: Gmail-Adresse
+  gmail_app_password:
+    name: Gmail-App-Passwort
+    description: 16 Zeichen, erstellt unter myaccount.google.com/apppasswords.
+  outlook_enabled:
+    name: Outlook verwenden
+  outlook_client_id:
+    name: Outlook-Client-ID
+    description: Anwendungs-ID aus der Microsoft-App-Registrierung (siehe Anleitung).
+  twilio_account_sid:
+    name: Twilio Account SID
+  twilio_auth_token:
+    name: Twilio Auth Token
+  twilio_whatsapp_from:
+    name: WhatsApp-Nummer von Jarvis
+    description: Die Twilio-Nummer mit WhatsApp, z. B. +4915112345678.
+  twilio_call_from:
+    name: Anruf-Nummer von Jarvis
+    description: Twilio-Nummer für Anrufe. Leer = gleiche wie WhatsApp.
+  whatsapp_template_sid:
+    name: WhatsApp-Vorlage (Content SID)
+    description: Beginnt mit HX... Nötig, damit Jarvis dir auch ohne vorherige Nachricht schreiben darf.
+  my_phone:
+    name: Deine Handynummer
+    description: Mit Ländervorwahl, z. B. +4917612345678.
+  call_voice:
+    name: Stimme für Anrufe
+  test_mode:
+    name: Testmodus
+    description: An = Jarvis sortiert nur zum Schein und löscht nichts. Nach ein paar Tagen ausschalten.
+  check_interval_minutes:
+    name: Prüfintervall (Minuten)
+  evening_call_enabled:
+    name: Abend-Anruf
+  evening_call_time:
+    name: Uhrzeit Abend-Anruf
+  quiet_start:
+    name: Ruhezeit ab
+  quiet_end:
+    name: Ruhezeit bis
+  timezone:
+    name: Zeitzone
+  days_back_on_first_start:
+    name: Tage rückwirkend beim ersten Start
+  never_delete:
+    name: Nie löschen
+    description: Adressen oder Domains, die nie in Papierkorb/Newsletter landen, z. B. mama@gmail.com oder firma.de.
+  always_urgent:
+    name: Immer dringend
+    description: Adressen oder Domains, bei denen Jarvis immer anruft.
+  extra_instructions:
+    name: Eigene Regeln
+    description: In Alltagssprache, z. B. "Mails vom Fußballverein sind wichtig".
